@@ -1,0 +1,116 @@
+/* jQuery TreeTable Core 2.0 stylesheet
+ *
+ * This file contains styles that are used to display the tree table. Each tree
+ * table is assigned the +treeTable+ class.
+ * ========================================================================= */
+
+/* jquery.treeTable.collapsible
+ * ------------------------------------------------------------------------- */
+#CategoryDiv .treeTable tr td .expander {
+  background-position: left center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  padding: 0;
+  zoom: 1; /* IE7 Hack */
+}
+
+#CategoryDiv .treeTable tr.collapsed td .expander {
+  background-image: url(images/toggle-expand-dark.png);
+}
+
+#CategoryDiv .treeTable tr.expanded td .expander {
+  background-image: url(images/toggle-collapse-dark.png);
+}
+
+/* jquery.treeTable.sortable
+ * ------------------------------------------------------------------------- */
+#CategoryDiv .treeTable tr.selected, .treeTable tr.accept {
+  background-color: #3875d7;
+  color: #fff;
+}
+
+#CategoryDiv .treeTable tr.collapsed.selected td .expander, .treeTable tr.collapsed.accept td .expander {
+  background-image: url(images/toggle-expand-light.png);
+}
+
+#CategoryDiv .treeTable tr.expanded.selected td .expander, .treeTable tr.expanded.accept td .expander {
+  background-image: url(images/toggle-collapse-light.png);
+}
+
+#CategoryDiv .treeTable .ui-draggable-dragging {
+  color: #000;
+  z-index: 1;
+}
+
+#CategoryDiv{ background-color:#fff;}
+#CategoryDiv pre.listing {
+  background: #eee;
+  border: 1px solid #ccc;
+  margin: .3em auto;
+  padding: .1em .3em;
+  width: 100%;
+}
+
+#CategoryDiv pre.listing b {
+  color: #f00;
+}
+
+/* TABLE
+ * ========================================================================= */
+#CategoryDiv table {
+  border: 1px solid #888;
+  border-collapse: collapse;
+  line-height: 1;
+  margin: 1em auto;
+  width: 100%;
+}
+
+/* Caption
+ * ------------------------------------------------------------------------- */
+#CategoryDiv table caption {
+  font-size: .9em;
+  font-weight: bold;
+}
+
+/* Header
+ * ------------------------------------------------------------------------- */
+#CategoryDiv table thead {
+  background: #aaa url(images/bg-table-thead.png) repeat-x top left;
+  font-size: .9em;
+}
+
+#CategoryDiv table thead tr th {
+  border: 1px solid #888;
+  font-weight: normal;
+  padding: .3em 1.67em .1em 1.67em;
+  text-align: left;
+}
+
+/* Body
+ * ------------------------------------------------------------------------- */
+#CategoryDiv table tbody tr td {
+  cursor: default;
+  padding: .3em 1.5em;
+}
+
+#CategoryDiv table tbody tr.even {
+  background: #f3f3f3;
+}
+
+#CategoryDiv table tbody tr.odd {
+  background: #fff;
+}
+
+#CategoryDiv table span {
+  background-position: center left;
+  background-repeat: no-repeat;
+  padding: .2em 0 .2em 1.5em;
+}
+
+#CategoryDiv table span.file {
+  background-image: url(images/page_white_text.png);
+}
+
+#CategoryDiv table span.folder {
+  background-image: url(images/folder.png);
+}
